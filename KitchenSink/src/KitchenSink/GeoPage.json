@@ -1,0 +1,11 @@
+{
+    "Html": "/KitchenSink/GeoPage.html",
+
+    "Position": {
+        "lat$": 0.0,
+        "$lat$": { "Bind": "Latitude" },
+        "lng$": 0.0,
+      "$lng$": { "Bind": "Longitude" },
+      "Reset$" :  0 
+    }
+}

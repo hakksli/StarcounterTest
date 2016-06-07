@@ -1,0 +1,142 @@
+﻿.customBtn:hover {
+        background-color: #90C3D4;
+    }
+.disabledBtn{
+          opacity: 0.5;
+    cursor: not-allowed;
+    }
+.kitchensink-layout {
+  display: flex;
+}
+
+.kitchensink-layout__column-left {
+  flex: 0 0 160px;
+  margin-right: 20px;
+}
+
+.kitchensink-layout__column-right {
+  flex: 0 1 600px;
+}
+
+.kitchensink-menu__heading {
+  font-size: 100%;
+}
+
+.kitchensink-menu__heading--first {
+  margin-top: 0;
+}
+
+.kitchensink-menu__list {
+  padding: 0;
+  list-style: none;
+}
+
+.kitchensink-select {
+  width: 50%;
+}
+
+.kitchensink-juicyselect {
+  display: block;
+}
+
+.kitchensink-heading {
+    border-bottom: lightgray 1px solid;
+}
+
+.kitchensink-nested-child {
+    padding: 10px;
+    border: 1px solid #eeeeee;
+}
+
+.kitchensink-x-breadcrumb {
+    margin-bottom: 20px;
+}
+
+.kitchensink-breadcrumb-suggestions {
+    padding: 0;
+    list-style: none;
+    color: white;
+    margin: 0;
+}
+
+.kitchensink-breadcrumb-suggestions__item:hover {
+    cursor: default;
+    background: rgba(255, 255, 255, 0.2);
+}    
+
+.kitchensink-upload-tasks {
+    background-color: #F0F0F0;
+    padding: 5px 10px 5px 10px;
+    border-left: 5px solid #C0C0C0;
+    margin-top: 20px;
+    font-size: x-small;
+}
+
+.kitchensink-upload-tasks__heading {
+    font-size: 15px;
+}
+
+.kitchensink-google-map {
+    height: 300px;
+}
+
+.kitchensink-add-carrots {
+    display: flex;
+    align-items: baseline;
+}
+
+.kitchensink-add-carrots > * {
+    margin-right: 10px;
+}
+
+.kitchensink-add-carrots__label {
+    font-weight: bold;
+}
+
+.kitchensink-toggle-button[pressed] {
+    color: white;
+    background: green;
+}
+
+.kitchensink-toggle-button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+@-moz-keyframes kitchen-spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes kitchen-spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes kitchen-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.kitchen-sink-spinner {
+    display: inline-block;
+    -moz-animation: kitchen-spin 2s infinite linear;
+    -o-animation: kitchen-spin 2s infinite linear;
+    -webkit-animation: kitchen-spin 2s infinite linear;
+    animation: kitchen-spin 2s infinite linear;
+}
+
+.kitchensink-autocomplete {
+    display: block;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.37);
+    list-style-type: none;
+    padding: 0px;
+    margin: 2px 0px;
+    position: absolute;
+}
+
+.kitchensink-autocomplete__item {
+    padding: 0px;
+}

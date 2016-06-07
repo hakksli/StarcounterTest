@@ -1,0 +1,58 @@
+﻿
+<template>
+    <template is="dom-bind">
+        <!--Not working. I couldnt get the template to work, to view the data i have created and stored in database. See the sortablelist.json-->
+        <table class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>People</th>
+            </tr>
+            </thead>
+            <tbody>
+            <template is="dom-repeat" items="{{model.People}}">
+                <tr class="info">
+                    <td>{{item.Position$}}</td>
+                    <td>{{item.Name}}</td>
+                    <td>
+                        <button class="fa fa-thumbs-up customBtn"></button>
+                    </td>
+                    <td>
+                        <button class="fa fa-thumbs-down customBtn"></button>
+                    </td>
+                </tr>
+            </template>
+            </tbody>
+        </table>
+        <!--Works partially. Made some frontend stuff, with buttons that changes colour and gets disabled.-->
+        <table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>People</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info">
+                    <td>1</td>
+                    <td>Zlatan</td>
+                    <td><button class="fa fa-thumbs-up customBtn disabledBtn"></button></td>
+                    <td><button class="fa fa-thumbs-down customBtn"></button></td>
+                </tr>
+                <tr class="success">
+                    <td>2</td>
+                    <td>Birgit</td>
+                    <td><button class="fa fa-thumbs-up customBtn"></button></td>
+                    <td><button class="fa fa-thumbs-down customBtn"></button></td>
+                </tr>
+                <tr class="danger">
+                    <td>3</td>
+                    <td>Greger</td>
+                    <td><button class="fa fa-thumbs-up customBtn"></button></td>
+                    <td><button class="fa fa-thumbs-down customBtn disabledBtn"></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+</template>
+
